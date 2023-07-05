@@ -1,4 +1,4 @@
-resource "awscc_elasticache_subnet_group" "main" {
+resource "aws_elasticache_subnet_group" "main" {
   name       = "${var.component}-${var.env}"
   subnet_ids = var.subnet_ids
 
